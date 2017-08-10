@@ -113,13 +113,14 @@
                $value = $value.'<div class="output" style="margin-top:35px">';
                $value = $value.'         Don`t forget your password color is <strong style="color:'.$pc.';">'.$pc.'</strong>';
                $value = $value.'       </div>';
-               print $value;   
+               print $value;  
+
                // Retry and print div
                ?>
                 <div id="retry">
                     <form method="post" action="print.php" >
                       <input type="submit" value="Try new" name="reload">
-                      <input type="submit" value="Create jpeg" name="jpgCreate">
+                      <input type="submit" value="Create pdf" name="pdfCreate">
                       <input type="hidden" value='<?php echo $value; ?>' name="htmCode">
                     </form>
                 </div>';

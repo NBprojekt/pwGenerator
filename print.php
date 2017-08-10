@@ -17,9 +17,15 @@ print $_POST['htmCode'];
 // Set parameters
 $apikey = 'b7fee2e8-f4e2-441f-8b86-cd72859c7f45';
 $value = $_POST['htmCode']; 
+                                           
+$postdata = http_build_query( array( 'apikey' => $apikey, 'value' => $value, 'MarginBottom' => '30',
+        'MarginTop' => '20')); 
+$opts = array('http' => array( 'method'  => 'POST', 'header'  => 'Content-type: application/x-www-form-urlencoded',
+        'content' => $postdata ) );
  
-$result = file_get_contents("http://api.html2pdfrocket.com/pdf?apikey=" . urlencode($apikey) . "&value=" . urlencode($value) . "&OutputFormat=jpg");
-file_put_contents('password_list.jpg', $result); 
+$context  = stream_context_create($opts); 
+$result = file_get_contents('http://api.html2pdfrocket.com/pdf', false, $context); 
+file_put_contents('password_list.pdf', $result);
 ?>
 <!-- Download the jpg -->
 <style> #div {
@@ -27,4 +33,4 @@ file_put_contents('password_list.jpg', $result);
     font-family: "Times, serif";font-size:200%;width:700px;
 }
 </style><br>
-<div id="div"> <a href="password_list.jpg" download> Download your Passwordlist </a></div>
+<div id="div"> <a href="password_list.pdf" download> Download your Passwordlist </a></div>
