@@ -18,7 +18,7 @@ Now just remember your passwords color and you'll never lose your password.
 
 ![Screenshot](/pwList.png)
 
-<br>
+
 ## Features
 
 If you want to, you can crate a picture of list by clicking on the "Create jpeg" button
@@ -27,7 +27,7 @@ and then download it.
 > Important !
 > Befor you open the page run `sudo chmod 777 pwGenerator` on your server!
 
-<br>
+
 ## License
 
 ![GNU GPLv3 Image](https://www.gnu.org/graphics/gplv3-127x51.png)

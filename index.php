@@ -119,7 +119,7 @@
                 <div id="retry">
                     <form method="post" action="print.php" >
                       <input type="submit" value="Try new" name="reload">
-                      <input type="submit" value="Create a jpeg" name="jpgCreate">
+                      <input type="submit" value="Create jpeg" name="jpgCreate">
                       <input type="hidden" value='<?php echo $value; ?>' name="htmCode">
                     </form>
                 </div>';
