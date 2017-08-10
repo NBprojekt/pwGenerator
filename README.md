@@ -21,7 +21,7 @@ Now just remember your passwords color and you'll never lose your password.
 
 ## Features
 
-If you want to, you can crate a PDF file of list by clicking on the "Create pdf" button
+If you want to, you can crate a PDF file of the list by clicking on the "Create pdf" button
 and then download it. 
 
 > Important !
